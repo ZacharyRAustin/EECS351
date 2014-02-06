@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>WebGL Testing Area</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body onload="main()">
+        <canvas onmousedown="click()" id="webgl" width="400" height="400" style="position:absolute; z-index: 0">
+            Please use a browser that supports canvas
+        </canvas>
+        <canvas onmousedown="click()" id="hud" width="400" height="400" style="position:absolute; z-index: 1;"></canvas>
+        <p style="position:absolute; top:60%;">Press F1 for help
+            <br>Note: This uses JQuery to handle the keyboard events, so it must be connected to the internet to work properly.</p>
+        <script src="webgl-utils.js"></script>
+        <script src="webgl-debug.js"></script>
+        <script src="cuon-utils.js"></script>
+        <script src="cuon-matrix-mod.js"></script>
+        <script src="ProjectA.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    </body>
+</html>
